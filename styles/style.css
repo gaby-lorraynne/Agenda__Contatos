@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
-.content {
-    display: flex;
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: flex; 
     flex-direction: column;
+}
+
+.content {
     text-align: center;
     margin: 0 auto;
     padding-top: 20px;
+    flex: 1;
 }
 
 .cabecalho {
@@ -108,6 +116,17 @@ th{
 
 tr:nth-child(even) {
     background-color: #ffe7d9;
+}
+
+footer {
+    background-color: #e9531e;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
 }
 
 
