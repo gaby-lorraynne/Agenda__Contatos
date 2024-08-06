@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="cabecalho">
+            <div class="cabecalho__imagem">
+                <img src="assets/imagens/calendario.png" alt="Imagem de Calendario">
+            </div>
+            <div class="cabecalho__titulo">
+                <h1>Minha agenda de contatos</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="formulario">
+            <h2>Adicionar novo Contato</h2>
+            <form action="">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Nome...">
+                <label for="telefone">Telefone</label>
+                <input type="telefone" name="telefone" id="telefone" maxlength="11" required placeholder="Telefone...">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="E-mail...">
+                <label for="interesse">Interesse</label>
+                <input type="text" name="interesse" id="interesse" required placeholder="Interesse...">
+
+                <button id="btnCadastrar">Cadastrar</button>
+            </form>
+        </div>
+        <hr>
+        <div class="tabela">
+            <h2>Meus Contatos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                        <th>Interesse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gabrielly Lorraynne</td>
+                        <td>112233445</td>
+                        <td>gabyalmeidacom@hotmail.com</td>
+                        <td>Desenvolvimento Front End</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
